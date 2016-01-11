@@ -1,0 +1,11 @@
+	<% issues.each do |i| %>
+	
+		<div class="container">
+			<div class="article_detail">
+				<h1><%= link_to i[:title]%></h1>
+				<p><%= link_to i[:comments]%></p>
+				<p class="time">2016年01月10日 12:50</p>
+			</div>
+		</div>
+
+	<% end %>
