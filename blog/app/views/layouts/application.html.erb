@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="UTF-8">
+	<title>吴泽晴的博客主页</title>
+	<%= stylesheet_link_tag 'application' %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="<%= params[:controller]+'-'+params[:action]%>">
+	<div class="nav clearfix">
+		<div class="container">
+			<a href="#" class="index left">blog</a>
+			<div class="nav_left left">
+			<ul>
+				<li ><a href="/article">article</a></a></li>
+				<li><a href="#">about</a></li>
+			</ul>
+			</div>
+			<div class="nav_right right">
+			<ul>
+				<li><a href="#">login</a></li>
+				<li><a href="#">register</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<%= yield %>
+	<div class="footer"></div>
 </body>
 </html>

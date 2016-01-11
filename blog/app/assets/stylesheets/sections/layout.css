@@ -1,0 +1,25 @@
+.nav {
+  height: 80px;
+  background-color: black;
+  color: #000;
+  position: relative;
+  z-index: 1000; }
+  .nav ul {
+    text-align: center; }
+    .nav ul li {
+      display: inline-block;
+      font-size: 25px;
+      width: 100px;
+      line-height: 80px; }
+      .nav ul li a:hover {
+        background-color: #fff;
+        color: black;
+        padding: 8px 12px;
+        border-radius: 3px; }
+  .nav .index {
+    font-size: 50px;
+    margin-right: 30px; }
+  .nav a {
+    color: #fff; }
+    .nav a:hover {
+      color: #c0865e; }
