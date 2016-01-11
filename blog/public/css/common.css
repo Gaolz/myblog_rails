@@ -1,0 +1,44 @@
+ul,li{
+	list-style: none;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+.container{
+	width: 1165px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+a{
+	text-decoration: none;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
