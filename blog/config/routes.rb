@@ -4,10 +4,12 @@ Blog::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
 root 'blog#welcome'
-get '/article' => 'blog#article'
-get '/articles/new' => "articles#new" ,:as => 'articles'
+get '/article' => 'blog#article'  
+
+get '/articles/new' => "articles#new" 
+get 'articles' => "articles#index" ,:as => 'articles'
 get '/articles/:id' => "articles#show"
-post 'articles' => 'articles#create'
+post '/articles' => 'articles#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
