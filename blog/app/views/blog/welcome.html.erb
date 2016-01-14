@@ -4,7 +4,7 @@
 			<h1>THIS'S MY BLOG</h1>
 			<p>想到什么就写什么</p>	
 		</div>
-		<div class="content_button"><button>查看我的文章</button></div>
+		<div class="content_button"><a href="/articles/new"><button style="cursor: pointer">查看我的文章</button></a></div>
 	</div>
 	<div class="my_article">
 		<div class="container">
@@ -16,5 +16,5 @@
 		</div>
 	</div>
 	<div class="article">
-	<%= render partial: 'issue_list', locals: { issues: @issues } %>
+	<%= render partial: 'issue_list', locals: { articles: @articles } %>
 	</div>

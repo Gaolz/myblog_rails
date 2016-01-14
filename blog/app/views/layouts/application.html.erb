@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>吴泽晴的博客主页</title>
 	<%= stylesheet_link_tag 'application' %>
+	<%= csrf_meta_tags %>
 </head>
 <body class="<%= params[:controller]+'-'+params[:action]%>">
 	<div class="nav clearfix">
 		<div class="container">
-			<a href="#" class="index left">blog</a>
+			<a href="/" class="index left">blog</a>
 			<div class="nav_left left">
 			<ul>
 				<li ><a href="/article">article</a></a></li>
